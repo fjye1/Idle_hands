@@ -1,0 +1,54 @@
+/* Colourstyles. #709612 */
+
+/* Active pill */
+.nav-pills .nav-link.active {
+  background-color: #709612;
+  color: #fff;
+}
+
+/* Inactive pills */
+.nav-pills .nav-link {
+  
+  color: #333; /* text color */
+}
+
+/* Optional: hover effect for inactive pills */
+.nav-pills .nav-link:hover {
+  background-color: #a0b000; /* slightly darker/lighter for hover */
+  color: #fff;
+}
+
+.btn-outline-custom {
+  color: #709612;            /* text color */
+  border: 2px solid #709612; /* outline color */
+  background-color: transparent; /* keep it “outline” */
+}
+
+.btn-outline-custom:hover {
+  color: #fff;               /* text on hover */
+  background-color: #709612; /* fill on hover */
+  border-color: #709612;
+}
+
+.btn-custom {
+  background-color: #709612; /* your color */
+  border-color: #709612;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #5a7810; /* slightly darker for hover */
+  border-color: #5a7810;
+}
+
+/* Card border */
+.border-custom {
+  border-color: #709612 !important; /* your custom color */
+}
+
+/* Card header background + text color */
+.text-bg-custom {
+  background-color: #709612 !important; /* same as border */
+  color: #fff; /* text color */
+  border-color: #709612 !important; /* border matches background */
+}

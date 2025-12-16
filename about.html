@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relax & Restore Massage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<!-- Header / Hero -->
+    <div id="header"></div>
+
+    <script>
+      fetch("headers.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
+<section id="about" class="container py-5">
+  <div class="row align-items-center">
+    <!-- Image on the left -->
+    <div class="col-md-4 mb-3 mb-md-0">
+      <img src="images\headshot_lynn.PNG" alt="Relax & Restore Massage" class="img-fluid rounded">
+    </div>
+
+    <!-- Text on the right -->
+    <div class="col-md-8">
+      <h2>About Us</h2>
+      <p>At <strong>Relax & Restore Massage</strong>, we believe in the power of touch to rejuvenate the mind and body. Our team of experienced therapists is dedicated to creating a calm, welcoming environment where every client can feel relaxed and cared for.</p>
+
+      <p>Whether you’re looking to unwind after a long week, recover from muscle tension, or just enjoy a moment of self-care, our range of massage services is designed to suit your needs. We pride ourselves on personalized treatments and professional service.</p>
+
+      <p>Located in a peaceful space, our goal is simple: help you feel refreshed, restored, and ready to take on whatever comes next.</p>
+    </div>
+  </div>
+</section>
+    </section>
+    <div id="footer"></div>
+
+    <script>
+      fetch("footers.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
