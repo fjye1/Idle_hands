@@ -49,3 +49,20 @@
     </div>
   </header>
 </body>
+<script>
+  // Get current page file name, e.g., "services.html"
+  const currentPage = location.pathname.split("/").pop();
+
+  // Select all nav links
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    // Get href file name
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
