@@ -1,5 +1,17 @@
 /* Colourstyles. #709612 */
 
+@font-face {
+  font-family: 'San Francisco';
+  src: url('../fonts/SF-Pro-Rounded-Regular.woff2') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'San Francisco', sans-serif;
+}
+
 /* Active pill */
 .nav-pills .nav-link.active {
   background-color: #709612;
