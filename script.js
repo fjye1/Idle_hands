@@ -19,5 +19,7 @@ function loadHTML(containerId, url, callback) {
 }
 
 // Load header and footer
-loadHTML("header", "headers.html", setActiveNav); // header + highlight nav
-loadHTML("footer", "footers.html"); // footer
+loadHTML("header", "headers.html", setActiveNav);
+loadHTML("footer", "footers.html", () => {
+  document.getElementById('year').textContent = new Date().getFullYear();
+});

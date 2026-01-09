@@ -2,14 +2,26 @@
 
 @font-face {
   font-family: 'San Francisco';
-  src: url('../fonts/SF-Pro-Rounded-Regular.woff2') format('opentype');
+  src: url('../fonts/SF-Pro-Rounded-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-body {
-  font-family: 'San Francisco', sans-serif;
+@font-face {
+  font-family: 'Eina_01';
+  src: url('../fonts/Eina01-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Eina_01', sans-serif;
+}
+
+p {
+  font-family:'Eina_01',sans-serif;
 }
 
 /* Active pill */
@@ -19,14 +31,13 @@ body {
 }
 
 /* Inactive pills */
-.nav-pills .nav-link {
-  
+.nav-pills .nav-link:not(.active) {
   color: #333; /* text color */
 }
 
-/* Optional: hover effect for inactive pills */
-.nav-pills .nav-link:hover {
-  background-color: #a0b000; /* slightly darker/lighter for hover */
+/* Hover for inactive pills only */
+.nav-pills .nav-link:not(.active):hover {
+  background-color: #a0b000;
   color: #fff;
 }
 
