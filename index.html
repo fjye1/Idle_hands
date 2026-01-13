@@ -33,7 +33,7 @@
             style="max-height: 800px"
           />
         </div>
-        <div class="col-md-12" style="padding:50px">
+        <div class="col-md-12" style="padding: 50px">
           <p>
             <strong>
               They say idle hands are the devil's play things —we say they're a
@@ -50,7 +50,13 @@
       </div>
 
       <div class="nav nav-pills justify-content-end">
-        <a href="https://www.fresha.com/book-now/idle-hands-massage-therapy-b85279f0/services?lid=2815277&eid=4974940&share=true&pId=2722338" class="nav-link active" aria-current="page">
+        <a
+          id="book-link"
+          href="#"
+          class="nav-link active book-link"
+          aria-current="page"
+          style="font-size: 2rem; padding: 1rem 3rem"
+        >
           book now
         </a>
       </div>
@@ -58,7 +64,7 @@
       <div class="row align-items-center">
         <div class="text-center">
           <img
-            src="images/headshot_lynn.PNG"
+            src="images/Lynn_hero_2.jpeg"
             alt="Relax & Restore Massage"
             class="rounded-circle"
             style="
@@ -71,7 +77,7 @@
           />
         </div>
       </div>
-      <div class="col-md-12" style="padding:50px">
+      <div class="col-md-12" style="padding: 50px">
         <p>
           Lynn’s background is rooted in movement, collaboration and craft -
           I’ve spent my career using my hands and working closely with people
@@ -141,7 +147,7 @@
           </div>
         </div>
       </section>
-      <div class="col-md-12" style="padding:50px">
+      <div class="col-md-12" style="padding: 50px">
         <p>
           Text 3: I haven’t written yet but something about Venue, working from
           PranaVoice beautiful space in Haggerston, length of walk from tube etc
@@ -149,10 +155,11 @@
         </p>
       </div>
 
-      <div class="nav nav-pills justify-content-center">
+      <div class="nav nav-pills justify-content-end">
         <a
-          href="https://www.fresha.com/book-now/idle-hands-massage-therapy-b85279f0/services?lid=2815277&eid=4974940&share=true&pId=2722338"
-          class="nav-link active"
+          id="book-link"
+          href="#"
+          class="nav-link active book-link"
           aria-current="page"
           style="font-size: 2rem; padding: 1rem 3rem"
         >
@@ -257,6 +264,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+      const booking_url =
+        "https://www.fresha.com/book-now/idle-hands-massage-therapy-b85279f0/all-offer?share=true&pId=2722338";
+
+      // Select all elements with the class 'book-link'
+      const buttons = document.querySelectorAll(".book-link");
+
+      // Loop through each button and set the href
+      buttons.forEach((button) => {
+        button.href = booking_url;
+      });
+
       const form = document.getElementById("contactForm");
       const SCRIPT_URL =
         "https://script.google.com/macros/s/AKfycbz-kpQRiJtx_DocYOKYuXA0j1kjfgMZkNeZd29poHkwLISF-4NUgBBcnu9tNiu8PZnlVw/exec";
@@ -292,6 +310,9 @@
           form.reset();
         }
       });
+      // $ python -m http.server 5000
+      // use this code to launch local server
+      // site will be http://localhost:5000/#
     </script>
 
     <div id="footer"></div>
@@ -299,5 +320,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-
