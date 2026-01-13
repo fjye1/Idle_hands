@@ -10,6 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <div>
+      <img
+        src="images/hero_3.jpg"
+        alt="Relaxing massage treatment"
+        class="img-fluid rounded mb-4"
+        style="width: 100%; max-height: 800px; object-fit: cover"
+      />
+    </div>
   </head>
   <body>
     <!-- Header / Hero -->
@@ -25,14 +33,14 @@
 
     <section class="container my-5" id="about">
       <div class="row">
-        <div class="col-md-12">
+        <!-- <div class="col-md-12 text-center">
           <img
-            src="images/Hero2.png"
+            src="images/hero_3.jpg"
             alt="Relaxing massage treatment"
             class="img-fluid rounded mb-4"
             style="max-height: 800px"
           />
-        </div>
+        </div> -->
         <div class="col-md-12" style="padding: 50px">
           <p>
             <strong>
@@ -49,13 +57,13 @@
         </div>
       </div>
 
-      <div class="nav nav-pills justify-content-end">
+      <div class="nav nav-pills justify-content-center">
         <a
           id="book-link"
           href="#"
           class="nav-link active book-link"
           aria-current="page"
-          style="font-size: 2rem; padding: 1rem 3rem"
+          style="font-size: 2rem; padding: 1rem 3rem; margin: 50px;"
         >
           book now
         </a>
@@ -157,13 +165,13 @@
         </p>
       </div>
 
-      <div class="nav nav-pills justify-content-end">
+      <div class="nav nav-pills justify-content-center">
         <a
           id="book-link"
           href="#"
           class="nav-link active book-link"
           aria-current="page"
-          style="font-size: 2rem; padding: 1rem 3rem"
+          style="font-size: 2rem; padding: 1rem 3rem; margin: auto;"
         >
           book now
         </a>
@@ -196,10 +204,10 @@
 
           <div class="col-md-6 text-center mb-4">
             <p>
-              <strong>mobile service</strong><br />
-              Clapton
-              <br />
-              London<br />
+              <strong>idle hands</strong><br />
+              Tuscany Wharf<br />
+              4A Orsman Rd, London N1 5QJ<br />
+              United Kingdom
             </p>
             <!-- Google Maps Embed - Location 2 -->
             <div class="ratio ratio-16x9">
@@ -266,52 +274,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      const booking_url =
-        "https://www.fresha.com/book-now/idle-hands-massage-therapy-b85279f0/all-offer?share=true&pId=2722338";
+      
 
-      // Select all elements with the class 'book-link'
-      const buttons = document.querySelectorAll(".book-link");
 
-      // Loop through each button and set the href
-      buttons.forEach((button) => {
-        button.href = booking_url;
-      });
-
-      const form = document.getElementById("contactForm");
-      const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbz-kpQRiJtx_DocYOKYuXA0j1kjfgMZkNeZd29poHkwLISF-4NUgBBcnu9tNiu8PZnlVw/exec";
-
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-
-        const name = formData.get("name");
-        const email = formData.get("email");
-        const message = formData.get("message");
-
-        try {
-          // Construct URL with proper encoding
-          const url = `${SCRIPT_URL}?name=${encodeURIComponent(
-            name
-          )}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(
-            message
-          )}`;
-
-          await fetch(url, {
-            method: "GET",
-            redirect: "follow",
-          });
-
-          alert("Submitted!");
-          form.reset();
-        } catch (error) {
-          alert(
-            "Submission successful (CORS limitation prevents confirmation)"
-          );
-          form.reset();
-        }
-      });
       // python -m http.server 5000
       // use this code to launch local server
       // site will be http://localhost:5000/#

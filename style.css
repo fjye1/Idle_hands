@@ -75,3 +75,23 @@ p {
   color: #fff; /* text color */
   border-color: #709612 !important; /* border matches background */
 }
+
+.phone-panel {
+  position: absolute;
+  right: 60px;              /* sits behind the icon */
+  white-space: nowrap;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateX(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.phone-panel.show {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
