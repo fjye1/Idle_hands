@@ -6,51 +6,58 @@
 <body>
   <!-- Header / Hero -->
   <header class="border-bottom mb-4">
-    <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <ul
-      class="nav list-unstyled d-flex flex-column position-fixed top-0 end-0 m-3"
-      style="z-index: 1000"
-    >
-      <li class="mb-3 d-flex align-items-center position-relative">
-  <button id="togglePhone" class="btn p-0 border-0 bg-transparent">
-    <img
-      src="favicon.png"
-      alt="logo"
-      width="50"
-      height="50"
-      class="product-img"
-    />
-  </button>
+  <ul
+    class="nav list-unstyled d-flex flex-column position-fixed top-0 end-0 p-3"
+    style="z-index: 1000; gap: 2vw;"
+  >
+    <!-- Phone Button -->
+    <li class="d-flex align-items-center position-relative">
+      <button id="togglePhone" class="btn p-0 border-0 bg-transparent">
+        <img
+          src="favicon.png"
+          alt="logo"
+          class="product-img"
+        />
+      </button>
 
-  <div id="phonePanel" class="phone-panel">
-    Phone Number
-  </div>
-</li>
-      <li class="mb-3">
-        <a class="text-body-secondary" href="https://www.instagram.com/idlehands_massagetherapy" aria-label="Instagram">
-          <img
-            src="images/instagram.svg"
-            alt="Instagram"
-            width="50"
-            height="50"
-            class="product-img"
-          />
-        </a>
-      </li>
-      <li class="mb-3 book-link">
-        <a class="text-body-secondary" href="#" aria-label="Fresha">
-          <img
-            src="images/Fresha_logo_copy.png"
-            alt="Fresha"
-            width="50"
-            height="50"
-            class="product-img"
-          />
-        </a>
-      </li>
-    </ul>
-  </header>
+      <div id="phonePanel" class="phone-panel">
+        Phone Number
+      </div>
+    </li>
+
+    <!-- Instagram -->
+    <li>
+      <a
+        class="text-body-secondary"
+        href="https://www.instagram.com/idlehands_massagetherapy"
+        aria-label="Instagram"
+      >
+        <img
+          src="images/instagram.svg"
+          alt="Instagram"
+          class="product-img"
+        />
+      </a>
+    </li>
+
+    <!-- Fresha -->
+    <li class="book-link">
+      <a
+        class="text-body-secondary"
+        href="#"
+        aria-label="Fresha"
+      >
+        <img
+          src="images/Fresha_logo_copy.png"
+          alt="Fresha"
+          class="product-img"
+        />
+      </a>
+    </li>
+  </ul>
+</header>
 
 
 </body>

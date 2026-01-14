@@ -76,22 +76,39 @@ p {
   border-color: #709612 !important; /* border matches background */
 }
 
-.phone-panel {
-  position: absolute;
-  right: 60px;              /* sits behind the icon */
-  white-space: nowrap;
-  padding: 8px 12px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transform: translateX(20px);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.25s ease;
-}
+ /* Images scale with screen size, keep aspect ratio */
+  .product-img {
+    width: 8vw;        /* 8% of viewport width */
+    max-width: 50px;   /* cap on large screens */
+    height: auto;      /* maintain ratio */
+  }
 
-.phone-panel.show {
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
-}
+  /* Phone panel responsive */
+  .phone-panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 25vw;         /* scales with screen */
+    max-width: 200px;    /* optional max size */
+    font-size: 2vw;      /* text scales too */
+    display: none;       /* toggle with JS */
+  }
+
+  /* Responsive spacing on list items */
+  ul.nav li {
+    margin-bottom: 2vw;
+  }
+
+  @media (min-width: 768px) {
+    .product-img {
+      width: 50px;   /* fixed size on medium+ screens */
+    }
+    .phone-panel {
+      font-size: 1rem;
+      width: 200px;
+    }
+  }
