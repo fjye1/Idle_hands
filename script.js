@@ -48,7 +48,7 @@ loadHTML("footer", "footers.html", () => {
 
 const form = document.getElementById("contactForm");
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbz1xoqFXzetr_wp-r89YAvjLQ3Y_hD5cnMtcvT3nU0jRkkhfBnA0y0WEg1AxqOHUEm2/exec";
+  "https://script.google.com/macros/s/AKfycbz-kpQRiJtx_DocYOKYuXA0j1kjfgMZkNeZd29poHkwLISF-4NUgBBcnu9tNiu8PZnlVw/exec";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
