@@ -60,6 +60,11 @@ form.addEventListener("submit", async (e) => {
   const email = formData.get("email");
   const message = formData.get("message");
 
+  if (!email || !phone) {
+    alert("Please enter both your email and phone number.");
+    return; // stop submission
+  }
+
   try {
     // Construct URL with proper encoding
     const url = `${SCRIPT_URL}?name=${encodeURIComponent(name)}
