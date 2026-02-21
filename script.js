@@ -48,7 +48,7 @@ loadHTML("footer", "footers.html", () => {
 
 const form = document.getElementById("contactForm");
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbz-kpQRiJtx_DocYOKYuXA0j1kjfgMZkNeZd29poHkwLISF-4NUgBBcnu9tNiu8PZnlVw/exec";
+  "https://script.google.com/macros/s/AKfycbyPjirrTOJAm3w0jT6uM8jYexIQfciE74wi1YRAidB8SxoiujZKwet0RxHOAhxOidiF7g/exec";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -56,16 +56,16 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(form);
 
   const name = formData.get("name");
+  const phone = formData.get("phone");
   const email = formData.get("email");
   const message = formData.get("message");
 
   try {
     // Construct URL with proper encoding
-    const url = `${SCRIPT_URL}?name=${encodeURIComponent(
-      name
-    )}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(
-      message
-    )}`;
+    const url = `${SCRIPT_URL}?name=${encodeURIComponent(name)}
+    &email=${encodeURIComponent(email)}
+    &phone=${encodeURIComponent(phone)}
+    &message=${encodeURIComponent(message)}`;
 
     await fetch(url, {
       method: "GET",
