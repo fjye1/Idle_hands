@@ -1,0 +1,30 @@
+name: Fetch Google Reviews
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 8am
+  workflow_dispatch:       # Allows manual trigger from GitHub UI
+
+jobs:
+  fetch-reviews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch reviews from Places API
+        run: |
+          curl -s \
+            -H "X-Goog-Api-Key: ${{ secrets.GOOGLE_API_KEY }}" \
+            -H "X-Goog-FieldMask: reviews,displayName" \
+            "https://places.googleapis.com/v1/places/${{ secrets.PLACE_ID }}" \
+            > reviews.json
+
+      - name: Commit and push reviews.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add reviews.json
+          git diff --staged --quiet || git commit -m "chore: update reviews"
+          git push
