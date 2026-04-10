@@ -171,3 +171,28 @@ p {
   color: #555;
   line-height: 1.5;
 }
+
+
+/* Review slider */
+
+@media (max-width: 768px) {
+  .review-slider-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; /* Makes it snap like a carousel */
+  }
+
+  #review-container {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 15px; /* Keeps the first card from hitting the edge */
+  }
+
+  #review-container .col {
+    flex: 0 0 85%; /* Shows 85% of the card so the user sees the next one exists */
+    scroll-snap-align: center;
+  }
+}
