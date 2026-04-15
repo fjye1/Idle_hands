@@ -110,6 +110,8 @@ p {
     }
   }
 
+
+
   .phone-panel {
   position: absolute;
   right: 60px;              /* sits behind the icon */
@@ -175,7 +177,7 @@ p {
 
 /* Review slider */
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   .review-slider-wrapper {
     overflow-x: auto;
     overflow-y: hidden;
@@ -195,4 +197,36 @@ p {
     flex: 0 0 85%; /* Shows 85% of the card so the user sees the next one exists */
     scroll-snap-align: center;
   }
+}
+
+.hero-container {
+    position: relative; /* THIS is the key */
+}
+
+.black-btn {
+    position: absolute;
+    bottom: clamp(16px, 4vw, 40px);
+    right: clamp(16px, 4vw, 40px);
+
+    font-family: 'Eina_01', sans-serif;
+    font-weight: bold;
+
+    font-size: clamp(16px, 3vw, 40px);
+    padding: clamp(8px, 1.5vw, 12px) clamp(16px, 3vw, 28px);
+
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+/* Hover */
+.black-btn:hover {
+    color: white;
+    -webkit-text-stroke: 0px;
+
+    background: rgb(0, 0, 0);
 }
