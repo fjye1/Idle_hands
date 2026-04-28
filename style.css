@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'San Francisco';
-  src: url('../fonts/SF-Pro-Rounded-Regular.woff2') format('woff2');
+  src: url('./fonts/SF-Pro-Rounded-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Eina_01';
-  src: url('../fonts/Eina01-Regular.ttf') format('truetype');
+  src: url('./fonts/Eina01-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
