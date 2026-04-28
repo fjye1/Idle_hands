@@ -42,6 +42,8 @@ loadHTML("header", "headers.html", () => {
   });
 });
 
+loadHTML("header_second", "headers_second.html", () => {});
+
 loadHTML("footer", "footers.html", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
 });
@@ -124,5 +126,3 @@ fetch("/reviews.json")
       container.appendChild(col);
     });
   });
-
-
