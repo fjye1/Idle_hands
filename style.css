@@ -297,14 +297,15 @@ ul.nav li {
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.02em;
-  transform: translateY(-0.05em);
+  
 }
 
 .location {
   color: #fff9eb;
   font-size: clamp(0.7rem, 3.9vw, 2.6rem);
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 0.02em;
+  transform: translate(0.4em, -0.4em);
 }
 
 .tagline {
@@ -364,6 +365,7 @@ ul.nav li {
   border-radius: 999px;
   background: rgb(0, 0, 0);
   text-decoration: none;
+  margin-top: 3rem;
 }
 
 .justify-content-center {
@@ -387,6 +389,8 @@ ul.nav li {
   /* Add your clamp font-sizes here */
 }
 
+
+/* Add make this image split in to 12ths  */
 .start-stop-third{
   grid-column: 1 / 4;
   row-gap: 100vh;
@@ -447,4 +451,9 @@ ul.nav li {
     /* This margin-top ensures the first bit of text 
        starts at the bottom of the first fold if desired */
     margin-top: -100vh; 
+}
+
+.about-block {
+  margin-top: 5rem;
+  line-height: 2;
 }
