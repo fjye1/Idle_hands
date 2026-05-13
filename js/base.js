@@ -23,15 +23,15 @@ function loadHTML(containerId, url, callback) {
 loadHTML("header", "partials/headers.html", () => {
   setActiveNav();
 
-  // Initialize phone toggle after header is loaded
-  const togglePhone = document.getElementById("togglePhone");
-  const phonePanel = document.getElementById("phonePanel");
+  // // Initialize phone toggle after header is loaded
+  // const togglePhone = document.getElementById("togglePhone");
+  // const phonePanel = document.getElementById("phonePanel");
 
-  if (togglePhone && phonePanel) {
-    togglePhone.addEventListener("click", () => {
-      phonePanel.classList.toggle("show");
-    });
-  }
+  // if (togglePhone && phonePanel) {
+  //   togglePhone.addEventListener("click", () => {
+  //     phonePanel.classList.toggle("show");
+  //   });
+  // }
 
   // Set booking URLs (MOVED HERE - in header callback)
   const booking_url =
