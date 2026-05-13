@@ -1,3 +1,6 @@
+:root {
+  --nav-height: 60px; /* adjust to your actual navbar height */
+}
 /* Colourstyles. #709612 */
 
 @font-face {
@@ -42,6 +45,7 @@ p {
 
 /* full width black bar */
 .navbar {
+  height: var(--nav-height);
   width: 100%;
   background: #000;
   padding: 12px 20px;
@@ -254,6 +258,7 @@ ul.nav li {
 .hero-container {
   position: relative;
   width: 100%;
+  
   /* Optional: Adds a subtle dark shadow so white text pops against light images */
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -261,8 +266,8 @@ ul.nav li {
 /* Moved your inline image styles here for cleaner HTML */
 .hero-img {
   width: 100%;
-  max-height: 800px;
-  height: 80vh; /* Ensures it takes up good screen space on all devices */
+  height: calc(100vh - var(--nav-height));
+  
   object-fit: cover;
 }
 
