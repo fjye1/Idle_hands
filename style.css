@@ -1,7 +1,8 @@
 :root {
-  --nav-height: 60px; /* adjust to your actual navbar height */
+  --nav-height: 60px;
 }
-/* Colourstyles. #709612 */
+
+/* ─── Fonts ─────────────────────────────────────────────── */
 
 @font-face {
   font-family: "San Francisco";
@@ -19,41 +20,33 @@
   font-display: swap;
 }
 
-/* olddarkgreen = #709612
-oldlightgreen = #a0b000
-darkgreen = #86AA01
-lightgreen = #AEDD01 */
+/* ─── Base ───────────────────────────────────────────────── */
 
 body {
-  background-color: #fff9eb; /* dark gray */
+  background-color: #fff9eb;
 }
 
-/* python -m http.server 5000 */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Eina_01", sans-serif;
-}
-
+h1, h2, h3, h4, h5, h6,
 p {
   font-family: "Eina_01", sans-serif;
 }
 
-/* full width black bar */
+/* ─── Navbar ─────────────────────────────────────────────── */
+
+/* Merged: was split across two separate .navbar blocks */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   height: var(--nav-height);
   width: 100%;
   background: #000;
   padding: 12px 20px;
-  z-index: 1000;
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly; /* pushes left + right apart */
+  justify-content: space-evenly;
 }
 
 .brand {
@@ -62,14 +55,12 @@ p {
   font-size: 16px;
 }
 
-/* container for links */
 .nav-links {
   display: flex;
   gap: 20px;
   margin-right: 40px;
 }
 
-/* links */
 .bar-link {
   color: #aaa;
   text-decoration: none;
@@ -77,100 +68,93 @@ p {
   transition: 0.2s;
 }
 
-/* hover */
 .bar-link:hover {
   color: #fff;
 }
 
-/* active page */
 .bar-link.active {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-}
+/* ─── Bootstrap pill/button overrides ───────────────────── */
 
-/* Active pill */
 .nav-pills .nav-link.active {
   background-color: #709612;
   color: #fff;
 }
 
-/* Inactive pills */
 .nav-pills .nav-link:not(.active) {
-  color: #333; /* text color */
+  color: #333;
 }
 
-/* Hover for inactive pills only */
 .nav-pills .nav-link:not(.active):hover {
   background-color: #a0b000;
   color: #fff;
 }
 
 .btn-outline-custom {
-  color: #709612; /* text color */
-  border: 2px solid #709612; /* outline color */
-  background-color: transparent; /* keep it “outline” */
+  color: #709612;
+  border: 2px solid #709612;
+  background-color: transparent;
 }
 
 .btn-outline-custom:hover {
-  color: #fff; /* text on hover */
-  background-color: #709612; /* fill on hover */
+  color: #fff;
+  background-color: #709612;
   border-color: #709612;
 }
 
 .btn-custom {
-  background-color: #709612; /* your color */
+  background-color: #709612;
   border-color: #709612;
   color: #fff;
 }
 
 .btn-custom:hover {
-  background-color: #5a7810; /* slightly darker for hover */
+  background-color: #5a7810;
   border-color: #5a7810;
 }
 
-/* Card border */
 .border-custom {
-  border-color: #709612 !important; /* your custom color */
+  border-color: #709612 !important;
 }
 
-/* Card header background + text color */
 .text-bg-custom {
-  background-color: #709612 !important; /* same as border */
-  color: #fff; /* text color */
-  border-color: #709612 !important; /* border matches background */
+  background-color: #709612 !important;
+  color: #fff;
+  border-color: #709612 !important;
 }
 
-/* Images scale with screen size, keep aspect ratio */
+/* ─── Product images ─────────────────────────────────────── */
+
 .product-img {
-  width: 8vw; /* 8% of viewport width */
-  max-width: 50px; /* cap on large screens */
-  height: auto; /* maintain ratio */
+  width: 8vw;
+  max-width: 50px;
+  height: auto;
 }
 
-/* Responsive spacing on list items */
 ul.nav li {
   margin-bottom: 2vw;
 }
 
 @media (min-width: 768px) {
   .product-img {
-    width: 50px; /* fixed size on medium+ screens */
+    width: 50px;
   }
+
   .phone-panel {
     font-size: 1rem;
     width: 200px;
   }
 }
 
+/* ─── Phone panel ────────────────────────────────────────── */
+
 .phone-panel {
   position: absolute;
-  right: 60px; /* sits behind the icon */
+  right: 60px;
   white-space: nowrap;
   padding: 8px 12px;
   background: white;
@@ -188,7 +172,7 @@ ul.nav li {
   pointer-events: auto;
 }
 
-/* review box elements */
+/* ─── Review cards ───────────────────────────────────────── */
 
 .review-card {
   border: 1px solid #eee;
@@ -218,7 +202,7 @@ ul.nav li {
 }
 
 .stars {
-  color: #fbbc04; /* Google Gold */
+  color: #fbbc04;
   margin-bottom: 8px;
 }
 
@@ -228,8 +212,6 @@ ul.nav li {
   line-height: 1.5;
 }
 
-/* Review slider */
-
 @media (max-width: 768px) {
   .review-slider-wrapper {
     overflow-x: auto;
@@ -237,37 +219,32 @@ ul.nav li {
     display: block;
     width: 100%;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory; /* Makes it snap like a carousel */
+    scroll-snap-type: x mandatory;
   }
 
   #review-container {
     margin-right: 0;
     margin-left: 0;
-    padding-left: 15px; /* Keeps the first card from hitting the edge */
+    padding-left: 15px;
   }
 
   #review-container .col {
-    flex: 0 0 85%; /* Shows 85% of the card so the user sees the next one exists */
+    flex: 0 0 85%;
     scroll-snap-align: center;
   }
 }
 
-/* new HERO container no text in image and new image format
+/* ─── Hero ───────────────────────────────────────────────── */
 
-/* Container needs to be relative to trap the absolute elements */
 .hero-container {
   position: relative;
   width: 100%;
-
-  /* Optional: Adds a subtle dark shadow so white text pops against light images */
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Moved your inline image styles here for cleaner HTML */
 .hero-img {
   width: 100%;
   height: calc(100svh - var(--nav-height));
-
   object-fit: cover;
 }
 
@@ -320,46 +297,28 @@ ul.nav li {
   transform: translateY(-0.8em);
 }
 
+/* ─── Buttons ────────────────────────────────────────────── */
+
 .black-btn {
   position: absolute;
   bottom: clamp(16px, 4vw, 40px);
   right: clamp(16px, 4vw, 40px);
-
   font-family: "Eina_01", sans-serif;
   font-weight: 200;
-
   font-size: clamp(16px, 3vw, 40px);
   padding: clamp(8px, 1.5vw, 12px) clamp(16px, 3vw, 28px);
-
-  /* Text color */
   color: #fff;
-  /* Optional: change border to black or remove it if you want a seamless look */
   border: 1px solid #000;
   border-radius: 999px;
-
-  /* Fixed background color */
-  background: rgb(0, 0, 0);
-
+  background: #000;
   text-decoration: none;
-
-  /* Transition can stay if you plan to add other effects later, 
-       otherwise, it's no longer doing much here. */
   transition: all 0.3s ease;
 }
 
 .btn-standard {
-  /* Change 'absolute' to 'inline-block' so it sits like text */
   display: inline-block;
-
-  /* Remove the 'absolute' positioning coordinates */
-  position: relative;
-  bottom: auto;
-  right: auto;
-
-  /* Add margin to space it away from the text above it */
-  margin-top: 2rem;
-
-  /* Keep your existing styling */
+  /* Removed leftover position/bottom/right overrides — not needed on a non-absolute element */
+  margin-top: 3rem; /* Removed duplicate 2rem that was overridden by this anyway */
   font-family: "Eina_01", sans-serif;
   font-weight: 200;
   font-size: clamp(16px, 3vw, 40px);
@@ -367,23 +326,52 @@ ul.nav li {
   color: #fff;
   border: 1px solid #000;
   border-radius: 999px;
-  background: rgb(0, 0, 0);
+  background: #000;
   text-decoration: none;
-  margin-top: 3rem;
 }
 
 .justify-content-center {
   display: flex;
   justify-content: center;
-  width: 100%; /* Ensures the container spans the full width */
-  margin-top: 2rem; /* Adds some breathing room from the text above */
+  width: 100%;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+/* ─── Video section ──────────────────────────────────────── */
+
+.video-section {
+  position: relative;
+  width: 100%;
+}
+
+.video-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  margin-top: -100vh;
+  padding-bottom: 10vh;
+}
+
+/* ─── Text grid ──────────────────────────────────────────── */
+
 .text-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* Creates 12 equal columns */
-  /* 50vh means the gap between blocks is half the screen height */
+  grid-template-columns: repeat(12, 1fr);
   row-gap: 50vh;
   width: 100%;
 }
@@ -391,74 +379,46 @@ ul.nav li {
 .text-block {
   color: white;
   font-family: "Eina_01", sans-serif;
-  /* Add your clamp font-sizes here */
 }
 
-/* middle 8 columns  */
-.middle-8 {
-  grid-column: 3 / 11;
-}
-
-.full-width {
-  grid-column: 1 / -1;
-}
-.left-8 {
-  grid-column: 3 / 7;
-}
-.right-8 {
-  grid-column: 7 / 11;
-}
+/* Merged: .middle-8 was defined twice — second block just added text-align */
 .middle-8 {
   grid-column: 3 / 11;
   text-align: center;
 }
 
-/* Text fade at the start of the video */
+.full-width  { grid-column: 1 / -1; }
+.left-8      { grid-column: 3 / 7; }
+.right-8     { grid-column: 7 / 11; }
+
+/* ─── Fade animation ─────────────────────────────────────── */
+
 .fade-text {
   opacity: 0;
-  
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .fade-text.visible {
   opacity: 1;
-  
 }
 
-/* TODO VIDEO SECTION */
-/* The container that holds everything */
-.video-section {
-  position: relative;
-  width: 100%;
-}
-
-/* The wrapper that stays fixed while you scroll through the height of its parent */
-.video-wrapper {
-  position: sticky;
-  top: 0;
-  height: 100vh; /* Full viewport height */
-  width: 100%;
-  overflow: hidden;
-  z-index: -1; /* Puts it behind the text */
-}
-
-.video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures video fills screen without stretching */
-}
-
-/* Your text container */
-.content-overlay {
-  position: relative;
-  z-index: 1;
-  /* This margin-top ensures the first bit of text 
-       starts at the bottom of the first fold if desired */
-  margin-top: -100vh;
-  padding-bottom: 10vh;
-}
+/* ─── About ──────────────────────────────────────────────── */
 
 .about-block {
   margin-top: 5rem;
   line-height: 2;
+}
+
+/* ─── Service ──────────────────────────────────────────────── */
+
+.service-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
 }
