@@ -258,7 +258,7 @@ ul.nav li {
 .hero-container {
   position: relative;
   width: 100%;
-  
+
   /* Optional: Adds a subtle dark shadow so white text pops against light images */
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -267,7 +267,7 @@ ul.nav li {
 .hero-img {
   width: 100%;
   height: calc(100vh - var(--nav-height));
-  
+
   object-fit: cover;
 }
 
@@ -302,7 +302,6 @@ ul.nav li {
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.02em;
-  
 }
 
 .location {
@@ -382,7 +381,7 @@ ul.nav li {
 
 .text-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-columns: repeat(12, 1fr); /* Creates 12 equal columns */
   /* 50vh means the gap between blocks is half the screen height */
   row-gap: 50vh;
   width: 100%;
@@ -394,68 +393,67 @@ ul.nav li {
   /* Add your clamp font-sizes here */
 }
 
-
-/* Add make this image split in to 12ths  */
-.start-stop-third{
-  grid-column: 1 / 4;
-  row-gap: 100vh;
-}
-/* 2/3 on the Right (Starts at col 2, ends at col 4) */
-.two-thirds-right {
-  grid-column: 2 / 4;
+/* middle 8 columns  */
+.middle-8 {
+  grid-column: 3 / 11;
 }
 
-/* 2/3 on the Left (Starts at col 1, ends at col 3) */
-.two-thirds-left {
-  grid-column: 1 / 3;
+.full-width {
+  grid-column: 1 / -1;
+}
+.left-8 {
+  grid-column: 3 / 7;
+}
+.right-8 {
+  grid-column: 7 / 11;
+}
+.middle-8 {
+  grid-column: 3 / 11;
+  text-align: center;
 }
 
-.one-thirds-left {
-  grid-column: 1 / 2;
+/* Text fade at the start of the video */
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Middle Third (Starts at col 2, ends at col 3) */
-.middle-third {
-  grid-column: 2 / 3;
-  text-align: center; /* Optional: centers text within that middle col */
+.fade-text.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-.full-third {
-  grid-column: 1 / 4;
-  text-align: center; /* Optional: centers text within that middle col */
-}
-
 
 /* TODO VIDEO SECTION */
 /* The container that holds everything */
 .video-section {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 /* The wrapper that stays fixed while you scroll through the height of its parent */
 .video-wrapper {
-    position: sticky;
-    top: 0;
-    height: 100vh; /* Full viewport height */
-    width: 100%;
-    overflow: hidden;
-    z-index: -1; /* Puts it behind the text */
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  overflow: hidden;
+  z-index: -1; /* Puts it behind the text */
 }
 
 .video-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures video fills screen without stretching */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills screen without stretching */
 }
 
 /* Your text container */
 .content-overlay {
-    position: relative;
-    z-index: 1;
-    /* This margin-top ensures the first bit of text 
+  position: relative;
+  z-index: 1;
+  /* This margin-top ensures the first bit of text 
        starts at the bottom of the first fold if desired */
-    margin-top: -100vh; 
+  margin-top: -100vh;
 }
 
 .about-block {
