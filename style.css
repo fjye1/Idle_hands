@@ -347,7 +347,7 @@ ul.nav li {
   transition: all 0.3s ease;
 }
 
-.black-btn-standard {
+.btn-standard {
   /* Change 'absolute' to 'inline-block' so it sits like text */
   display: inline-block;
 
@@ -377,6 +377,7 @@ ul.nav li {
   justify-content: center;
   width: 100%; /* Ensures the container spans the full width */
   margin-top: 2rem; /* Adds some breathing room from the text above */
+  margin-bottom: 2rem;
 }
 
 .text-container {
@@ -454,6 +455,7 @@ ul.nav li {
   /* This margin-top ensures the first bit of text 
        starts at the bottom of the first fold if desired */
   margin-top: -100vh;
+  padding-bottom: 10vh;
 }
 
 .about-block {
