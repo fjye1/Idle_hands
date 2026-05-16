@@ -24,6 +24,7 @@
 
 body {
   background-color: #fff9eb;
+  font-family: "Eina_01", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -38,7 +39,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-
+  
   height: var(--nav-height);
   width: 100%;
   background: #000;
