@@ -29,36 +29,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero-container">
-      <img
-        src="images/Back-Img-Hero.webp"
-        alt="Relaxing massage treatment"
-        class="hero-img rounded"
-      />
-
-      <div class="hero-text-overlay">
-        <div class="hero-text-inner">
-          <h1 class="brand-name fade-text">idle hands</h1>
-          <div class="hero-text-labels">
-            <span class="location fade-text">massage therapy</span>
-            <span class="tagline"></span>
+    <div class="hero-wrapper">
+      <div class="hero-container">
+        <img
+          src="images/Back-Img-Hero.webp"
+          alt="Relaxing massage treatment"
+          class="hero-img rounded"
+        />
+        <div class="hero-text-overlay">
+          <div class="hero-text-inner">
+            <h1 class="brand-name fade-text">idle hands</h1>
+            <div class="hero-text-labels">
+              <span class="location fade-text">massage therapy</span>
+              <span class="tagline"></span>
+            </div>
           </div>
         </div>
+        <a id="book-link" href="#" class="black-btn book-link">book here</a>
       </div>
 
-      <a id="book-link" href="#" class="black-btn book-link">book here</a>
+      <nav class="navbar">
+        <a href="index.html" class="brand" style="text-decoration: none"
+          >idle hands</a
+        >
+        <div class="nav-links"></div>
+        <a href="services.html" class="bar-link">services</a>
+        <a href="about.html" class="bar-link">about</a>
+        <a href="faq.html" class="bar-link">faq</a>
+        <a href="book.html" class="bar-link">book</a>
+      </nav>
     </div>
-    <nav class="navbar">
-      <a href="index.html" class="brand" style="text-decoration: none"
-        >idle hands</a
-      >
-      <div class="nav-links"></div>
-
-      <a href="services.html" class="bar-link">services</a>
-      <a href="about.html" class="bar-link">about</a>
-      <a href="faq.html" class="bar-link">faq</a>
-      <a href="book.html" class="bar-link">book</a>
-    </nav>
+    <!-- end .hero-wrapper -->
+    <div class="hero-spacer"></div>
 
     <!-- Header / Hero -->
     <div id="header"></div>
@@ -99,7 +101,7 @@
           <div class="text-block middle-8">
             <p></p>
           </div>
-          <!-- Row 1: Takes up the right 2/3 -->
+
           <div class="text-block middle-right-8">
             <p>
               our treatments undo more than knots—they help your body reconnect,
@@ -107,7 +109,6 @@
             </p>
           </div>
 
-          <!-- Row 2: Takes up the left 2/3 -->
           <div class="text-block left-8">
             <p>
               every session begins with a personalised consultation to ensure
@@ -129,7 +130,6 @@
             <p></p>
           </div>
 
-          <!-- Row 3: Takes up only the middle third -->
           <div class="text-block middle-8">
             <p>ease your body into summer</p>
           </div>
@@ -175,6 +175,7 @@
     <div id="footer"></div>
 
     <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/contact_form.js"></script>
     <script src="js/reviews.js"></script>
   </body>

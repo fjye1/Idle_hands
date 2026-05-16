@@ -2,7 +2,7 @@
   --nav-height: 60px;
 }
 
-/* ─── Fonts ─────────────────────────────────────────────── */
+/* ─── Fonts ──────────────────────────────────────────────── */
 
 @font-face {
   font-family: "San Francisco";
@@ -27,24 +27,30 @@ body {
   font-family: "Eina_01", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
   font-family: "Eina_01", sans-serif;
 }
 
 /* ─── Navbar ─────────────────────────────────────────────── */
 
-/* Merged: was split across two separate .navbar blocks */
-.navbar {
+/* .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  
   height: var(--nav-height);
   width: 100%;
   background: #000;
   padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
 
+.navbar {
+  height: var(--nav-height);
+  width: 100%;
+  background: #000;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -66,7 +72,7 @@ p {
   color: #aaa;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.2s;
+  transition: color 0.2s;
 }
 
 .bar-link:hover {
@@ -79,172 +85,56 @@ p {
   padding-bottom: 2px;
 }
 
-/* ─── Bootstrap pill/button overrides ───────────────────── */
-
-.nav-pills .nav-link.active {
-  background-color: #709612;
-  color: #fff;
-}
-
-.nav-pills .nav-link:not(.active) {
-  color: #333;
-}
-
-.nav-pills .nav-link:not(.active):hover {
-  background-color: #a0b000;
-  color: #fff;
-}
-
-.btn-outline-custom {
-  color: #709612;
-  border: 2px solid #709612;
-  background-color: transparent;
-}
-
-.btn-outline-custom:hover {
-  color: #fff;
-  background-color: #709612;
-  border-color: #709612;
-}
-
-.btn-custom {
-  background-color: #709612;
-  border-color: #709612;
-  color: #fff;
-}
-
-.btn-custom:hover {
-  background-color: #5a7810;
-  border-color: #5a7810;
-}
-
-.border-custom {
-  border-color: #709612 !important;
-}
-
-.text-bg-custom {
-  background-color: #709612 !important;
-  color: #fff;
-  border-color: #709612 !important;
-}
-
-/* ─── Product images ─────────────────────────────────────── */
-
-.product-img {
-  width: 8vw;
-  max-width: 50px;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .product-img {
-    width: 10vw;
-    max-width: 20px;
-  }
-}
-
-ul.nav li {
-  margin-bottom: 2vw;
-}
-
-
-
-/* ─── Phone panel ────────────────────────────────────────── */
-
-.phone-panel {
-  position: absolute;
-  right: 60px;
-  white-space: nowrap;
-  padding: 8px 12px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transform: translateX(20px);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.25s ease;
-}
-
-.phone-panel.show {
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* ─── Review cards ───────────────────────────────────────── */
-
-.review-card {
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  background: #fff;
-}
-
-.author-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.author-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.author-name {
-  font-weight: bold;
-  color: #333;
-}
-
-.stars {
-  color: #fbbc04;
-  margin-bottom: 8px;
-}
-
-.review-text {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  .review-slider-wrapper {
-    overflow-x: auto;
-    overflow-y: hidden;
-    display: block;
-    width: 100%;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-  }
-
-  #review-container {
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 15px;
-  }
-
-  #review-container .col {
-    flex: 0 0 85%;
-    scroll-snap-align: center;
-  }
-}
-
 /* ─── Hero ───────────────────────────────────────────────── */
+
+/* .hero-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} */
+
+.hero-spacer {
+  height: 50svh; /* matches initial hero height, never changes */
+  pointer-events: none;
+}
+
+.hero-wrapper {
+  position: fixed; /* ← was sticky. now out of flow, no layout shift */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
 
 .hero-container {
   position: relative;
   width: 100%;
+  height: calc(100svh - var(--nav-height));
+  overflow: hidden;
+  transition: height 0.4s ease;
+  will-change: height;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-container.shrink {
+  height: 3.5rem;
 }
 
 .hero-img {
   width: 100%;
-  height: calc(100svh - var(--nav-height));
+  height: 100%; /* container controls height — no need to repeat the calc here */
   object-fit: cover;
+}
+
+.hero-text-overlay,
+.book-link {
+  transition: opacity 0.2s ease;
+}
+
+.hero-container.shrink .hero-text-overlay,
+.hero-container.shrink .book-link {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero-text-overlay {
@@ -314,10 +204,17 @@ ul.nav li {
   transition: all 0.3s ease;
 }
 
+
+/* .btn-standard {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0;
+} */
 .btn-standard {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   /* Removed leftover position/bottom/right overrides — not needed on a non-absolute element */
-  margin-top: 3rem; /* Removed duplicate 2rem that was overridden by this anyway */
+  margin: 3rem auto 0;
   font-family: "Eina_01", sans-serif;
   font-weight: 200;
   font-size: clamp(16px, 3vw, 40px);
@@ -327,14 +224,6 @@ ul.nav li {
   border-radius: 999px;
   background: #000;
   text-decoration: none;
-}
-
-.justify-content-center {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 /* ─── Video section ──────────────────────────────────────── */
@@ -384,33 +273,16 @@ ul.nav li {
 @media (max-width: 768px) {
   .text-block {
     font-size: 1.1rem;
-    
   }
 }
 
-/* Merged: .middle-8 was defined twice — second block just added text-align */
-.middle-8 {
-  grid-column: 5 / 9;
-  text-align: center;
-}
+.middle-8       { grid-column: 5 / 9;  text-align: center; }
+.full-width     { grid-column: 1 / -1; }
+.middle-left-8  { grid-column: 2 / 6; }
+.middle-right-8 { grid-column: 6 / 10; }
+.left-8         { grid-column: 3 / 7; }
+.right-8        { grid-column: 7 / 11; }
 
-.full-width  { grid-column: 1 / -1; }
-.middle-left-8    { grid-column: 2 / 6; }
-.middle-right-8   { grid-column: 6 / 10; }
-.left-8      { grid-column: 3 / 7; }
-.right-8     { grid-column: 7 / 11; }
-
-
-/* @media (max-width: 768px) {
-  .middle-8,
-  .middle-right-8 ,
-  .middle-left-8,
-  .left-8,
-  .right-8 {
-    grid-column: 1 / -1;
-    padding: 16px;
-  }
-} */
 /* ─── Fade animation ─────────────────────────────────────── */
 
 .fade-text {
@@ -429,7 +301,7 @@ ul.nav li {
   line-height: 2;
 }
 
-/* ─── Service ──────────────────────────────────────────────── */
+/* ─── Services ───────────────────────────────────────────── */
 
 .service-img {
   object-fit: cover;
@@ -440,10 +312,72 @@ ul.nav li {
 
 .card:hover {
   transform: translateY(-4px);
-  transition: 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-/* ─── Footer ──────────────────────────────────────────────── */
+/* ─── Review cards ───────────────────────────────────────── */
+
+.review-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.stars {
+  color: #fbbc04;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .review-slider-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  #review-container {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 15px;
+  }
+
+  #review-container .col {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
+}
+
+/* ─── Footer ─────────────────────────────────────────────── */
 
 .footer {
   display: flex;
@@ -458,13 +392,8 @@ ul.nav li {
   align-items: center;
 }
 
-.footer-left {
-  justify-content: flex-start;
-}
-
-.footer-right {
-  justify-content: flex-end;
-}
+.footer-left  { justify-content: flex-start; }
+.footer-right { justify-content: flex-end; }
 
 .footer-icons {
   display: flex;
