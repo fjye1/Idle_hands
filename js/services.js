@@ -16,15 +16,32 @@ fetch("services.json")
     </div>
 
     <div class="service-content">
+
       <div class="top-row">
         <h5>${service.name}</h5>
-        <span class="badge">${service.duration}</span>
       </div>
+
       <p>${service.description}</p>
+
       <div class="bottom-row">
-        <span class="price">${service.price}</span>
+
+        <div class="price-list">
+          ${service.prices
+            .map(
+              (item) => `
+                <div class="price-row">
+                  <span>${item.duration}</span>
+                  <span>${item.price}</span>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+
         <a href="book.html" class="btn">Book</a>
+
       </div>
+
     </div>
 
     <div class="service-spacer"></div>

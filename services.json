@@ -4,36 +4,96 @@
             "name": "Deep Tissue Massage",
             "image": "images/massage_test.jpg",
             "description": "Deliberate, focused deep tissue work. Sinking layer by layer to target long-held tension, working with the body rather than against it.  If you’ve come with a new or long-term issue, we’ll work directly on it to help your body release and restore ease. The aim is to unburden, and to aid a profound sense of calm that lingers long after leaving the massage table.",
-            "price": "£80",
-            "duration": "60 min"
+            "prices": [
+                {
+                    "duration": "30 min",
+                    "price": "£45"
+                },
+                {
+                    "duration": "60 min",
+                    "price": "£80"
+                },
+                {
+                    "duration": "90 min",
+                    "price": "£110"
+                }
+            ]
         },
         {
             "name": "Holistic",
             "image": "images/massage_test.jpg",
             "description": "Slow, intuitive touch. Guided by breath and stillness, invites the body to exist beyond muscle and bone and creating a space for calm, clarity and a profound state of rest. ",
-            "price": "£80",
-            "duration": "60 min"
+            "prices": [
+                {
+                    "duration": "30 min",
+                    "price": "£45"
+                },
+                {
+                    "duration": "60 min",
+                    "price": "£80"
+                },
+                {
+                    "duration": "90 min",
+                    "price": "£110"
+                }
+            ]
         },
         {
             "name": "Lomi Lomi style",
             "image": "images/massage_test.jpg",
             "description": "Lomi Lomi flows over the body like water, easing tension and softening held patterns. It is a heart-led massage that is personalised to each client in the present moment. Allow yourself to open up and release, leaving embodied, grounded and energised.",
-            "price": "£70",
-            "duration": "60 min"
+            "prices": [
+                {
+                    "duration": "30 min",
+                    "price": "£45"
+                },
+                {
+                    "duration": "60 min",
+                    "price": "£80"
+                },
+                {
+                    "duration": "90 min",
+                    "price": "£110"
+                }
+            ]
         },
         {
             "name": "Marathon",
             "image": "images/massage_test.jpg",
             "description": "here, we work on the muscles and the mind through a variety of sessions over your training plan. giving you that time and space to slow down, think about your achievements and give your body that much deserved love.",
-            "price": "£230",
-            "duration": "180 min"
+            "prices": [
+                {
+                    "duration": "30 min",
+                    "price": "£45"
+                },
+                {
+                    "duration": "60 min",
+                    "price": "£80"
+                },
+                {
+                    "duration": "90 min",
+                    "price": "£110"
+                }
+            ]
         },
         {
             "name": "Pregnancy",
             "image": "images/massage_test.jpg",
             "description": "The perfect gift of time, relaxation, and a moment of care for you, your changing body and your growing baby. Available after your first 12 weeks.",
-            "price": "£80",
-            "duration": "60 min"
+            "prices": [
+                {
+                    "duration": "30 min",
+                    "price": "£45"
+                },
+                {
+                    "duration": "60 min",
+                    "price": "£80"
+                },
+                {
+                    "duration": "90 min",
+                    "price": "£110"
+                }
+            ]
         }
     ]
 }
