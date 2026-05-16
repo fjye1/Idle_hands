@@ -6,49 +6,31 @@ fetch("services.json")
 
     services.forEach((service) => {
       const col = document.createElement("div");
-      col.className = "col-12 col-md-6";
+      col.className = "service-item";
 
       col.innerHTML = `
-        <div class="card h-100 shadow-sm border-0">
+  <div class="service-card">
 
-          <div class="row g-0 align-items-stretch">
+    <div class="service-image">
+      <img src="${service.image}" alt="${service.name}" />
+    </div>
 
-            <!-- IMAGE LEFT -->
-            <div class="col-4">
-              <img
-                src="${service.image}"
-                class="img-fluid h-100 service-img"
-                alt="${service.name}"
-              />
-            </div>
+    <div class="service-content">
+      <div class="top-row">
+        <h5>${service.name}</h5>
+        <span class="badge">${service.duration}</span>
+      </div>
+      <p>${service.description}</p>
+      <div class="bottom-row">
+        <span class="price">${service.price}</span>
+        <a href="book.html" class="btn">Book</a>
+      </div>
+    </div>
 
-            <!-- CONTENT RIGHT -->
-            <div class="col-8">
-              <div class="card-body d-flex flex-column h-100">
+    <div class="service-spacer"></div>
 
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title mb-0 fw-bold">${service.name}</h5>
-                  <span class="badge bg-dark text-white">${service.duration}</span>
-                </div>
-
-                <p class="card-text text-muted small mb-3">
-                  ${service.description}
-                </p>
-
-                <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <span class="fw-bold fs-5">${service.price}</span>
-
-                  <a href="book.html" class="btn btn-sm btn-outline-dark">
-                    Book
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      `;
+  </div>
+`;
 
       container.appendChild(col);
     });

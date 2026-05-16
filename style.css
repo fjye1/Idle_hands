@@ -113,6 +113,11 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 100;
 } */
 
+.spacer-small {
+  height: 10svh; /* matches initial hero height, never changes */
+  pointer-events: none;
+}
+
 .hero-spacer {
   height: 50svh; /* matches initial hero height, never changes */
   pointer-events: none;
@@ -323,7 +328,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ─── Services ───────────────────────────────────────────── */
 
-.service-img {
+/* .service-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -333,6 +338,82 @@ h1, h2, h3, h4, h5, h6, p {
 .card:hover {
   transform: translateY(-4px);
   transition: transform 0.2s ease;
+} */
+#services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service-card {
+  display: flex;
+  align-items: stretch;
+  /* background: #fff; */
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.08); */
+}
+
+.service-image,
+.service-content,
+.service-spacer {
+  flex: 1;
+}
+
+.service-image {
+  min-height: 200px;
+  order: 0;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 1;
+}
+
+.service-spacer {
+  order: 2;
+}
+
+/* even: flip all three */
+.service-item:nth-child(even) .service-image   { order: 2; }
+.service-item:nth-child(even) .service-content { order: 1; }
+.service-item:nth-child(even) .service-spacer  { order: 0; }
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .service-image,
+  .service-content,
+  .service-spacer {
+    flex: unset;
+  }
+
+  .service-image  { flex: 1; order: 0 !important; }
+  .service-content { flex: 2; order: 1 !important; }
+  .service-spacer  { display: none; }
 }
 
 /* ─── Review cards ───────────────────────────────────────── */
