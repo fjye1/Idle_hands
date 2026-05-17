@@ -2,7 +2,7 @@
   --nav-height: 60px;
 }
 
-/* ─── Fonts ──────────────────────────────────────────────── */
+/* ─── Fonts all──────────────────────────────────────────────── */
 
 @font-face {
   font-family: "San Francisco";
@@ -20,7 +20,7 @@
   font-display: swap;
 }
 
-/* ─── Base ───────────────────────────────────────────────── */
+/* ─── Base all ───────────────────────────────────────────────── */
 
 body {
   background-color: #fff9eb;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Eina_01", sans-serif;
 }
 
-/* ─── Navbar ─────────────────────────────────────────────── */
+/* ─── Navbar all─────────────────────────────────────────────── */
 
 .dropdown {
   position: relative;
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 2px;
 }
 
-/* ─── Hero ───────────────────────────────────────────────── */
+/* ─── Hero index.html/all ───────────────────────────────────────────────── */
 
 /* .hero-wrapper {
   position: sticky;
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6, p {
   transform: translateY(-0.8em);
 }
 
-/* ─── Buttons ────────────────────────────────────────────── */
+/* ─── Buttons all ────────────────────────────────────────────── */
 
 .black-btn {
   position: absolute;
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
 }
 
-/* ─── Video section ──────────────────────────────────────── */
+/* ─── Video section index.html ───────────────────────────────────────── */
 
 .video-section {
   position: relative;
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 10vh;
 }
 
-/* ─── Text grid ──────────────────────────────────────────── */
+/* ─── Text grid index.html ──────────────────────────────────────────── */
 
 .text-container {
   display: grid;
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6, p {
 .left-8         { grid-column: 3 / 7; }
 .right-8        { grid-column: 7 / 11; }
 
-/* ─── Fade animation ─────────────────────────────────────── */
+/* ─── Fade animation index.html ─────────────────────────────────────── */
 
 .fade-text {
   opacity: 0;
@@ -319,14 +319,14 @@ h1, h2, h3, h4, h5, h6, p {
   opacity: 1;
 }
 
-/* ─── About ──────────────────────────────────────────────── */
+/* ─── About about.html ──────────────────────────────────────────────── */
 
 .about-block {
   margin-top: 5rem;
   line-height: 2;
 }
 
-/* ─── Services ───────────────────────────────────────────── */
+/* ─── Services treatment.HTML ───────────────────────────────────────────── */
 
 /* .service-img {
   object-fit: cover;
@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6, p {
   .service-spacer  { display: none; }
 }
 
-/* ─── Review cards ───────────────────────────────────────── */
+/* ─── Review cards index.html ───────────────────────────────────────── */
 
 .review-card {
   border: 1px solid #eee;
@@ -478,7 +478,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-/* ─── Footer ─────────────────────────────────────────────── */
+/* ─── Footer all ─────────────────────────────────────────────── */
 
 .footer {
   display: flex;
@@ -516,4 +516,28 @@ h1, h2, h3, h4, h5, h6, p {
   footer .nav {
     justify-content: center !important;
   }
+}
+
+/* ─── faq faq.html ───────────────────────────────────────── */
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq-answer.active {
+  max-height: 200px;
+  padding: 15px;
 }

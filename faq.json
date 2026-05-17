@@ -1,0 +1,27 @@
+{
+  "faq": [
+    {
+      "category": "Booking",
+      "questions": [
+        {
+          "question": "How far in advance should I book?",
+          "answer": "We recommend booking at least 2–4 weeks in advance."
+        },
+        {
+          "question": "Can I change my booking?",
+          "answer": "Yes, subject to availability."
+        }
+      ]
+    },
+
+    {
+      "category": "Payments",
+      "questions": [
+        {
+          "question": "Do you require a deposit?",
+          "answer": "Yes, a 25% deposit is required."
+        }
+      ]
+    }
+  ]
+}
