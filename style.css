@@ -349,6 +349,10 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 40px;
 }
 
+.service-item {
+  padding: 20px 0;
+}
+
 .service-card {
   display: flex;
   align-items: stretch;
