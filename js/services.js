@@ -12,7 +12,6 @@ fetch("services.json")
       const type = service.type.toLowerCase();
       const container = containers[type];
 
-      // Skip if there's no matching container for this type
       if (!container) return;
 
       const col = document.createElement("div");
@@ -32,7 +31,15 @@ fetch("services.json")
         <h5>${service.type}</h5>
       </div>
 
-      <p>${service.description}</p>
+      <p>${service.short_description}</p>
+
+      <button class="read-more-btn">
+        Read More
+      </button>
+
+      <div class="long-description hidden">
+        <p>${service.description}</p>
+      </div>
 
       <div class="bottom-row">
 
@@ -61,7 +68,13 @@ fetch("services.json")
 `;
 
       container.appendChild(col);
+
+      // ✅ Inside the forEach — runs once per card, col is in scope
+      const button = col.querySelector(".read-more-btn");
+      const longDescription = col.querySelector(".long-description");
+
+      button.addEventListener("click", () => {
+        longDescription.classList.toggle("hidden");
+      });
     });
   });
-
- 

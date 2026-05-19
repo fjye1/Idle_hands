@@ -3,7 +3,8 @@
         {
             "name": "deep tissue",
             "type": "solo",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-1.webp",
+            "short_description": "Focused deep tissue work to release tension and restore ease.",
             "description": "Deliberate, focused deep tissue work. Sinking layer by layer to target long-held tension, working with the body rather than against it. If you’ve come with a new or long-term issue, we’ll work directly on it to help your body release and restore ease. The aim is to unburden, and to aid a profound sense of calm that lingers long after leaving the massage table.",
             "prices": [
                 {
@@ -23,7 +24,8 @@
         {
             "name": "restorative",
             "type": "solo",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-4.webp",
+            "short_description": "Slow, calming massage designed to soothe the nervous system.",
             "description": "Slow, intuitive touch. Guided by breath and stillness, invites the body to exist beyond muscle and bone and creating a space for calm, clarity and a profound state of rest.",
             "prices": [
                 {
@@ -43,7 +45,8 @@
         {
             "name": "Lomi Lomi style",
             "type": "solo",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-3.webp",
+            "short_description": "Flowing heart-led massage that grounds, softens and energises.",
             "description": "Lomi Lomi flows over the body like water, easing tension and softening held patterns. It is a heart-led massage that is personalised to each client in the present moment. Allow yourself to open up and release, leaving embodied, grounded and energised.",
             "prices": [
                 {
@@ -63,7 +66,8 @@
         {
             "name": "face",
             "type": "solo",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-2.webp",
+            "short_description": "Deeply relaxing face, scalp and neck massage for hidden tension.",
             "description": "if you haven't tried this before, you are in for a treat. with focus around the face, scalp and neck this treatment is perfect for dissolving tension you didn't know you had. Using slow, strong techniques along the back, jawline and forehead, the feeling of sinking into the massage table with stay with you for days to come. This is the perfect gift for a loved one, too.",
             "prices": [
                 {
@@ -83,7 +87,8 @@
         {
             "name": "Pregnancy",
             "type": "solo",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-5.webp",
+            "short_description": "Gentle, supportive care for you and your changing body.",
             "description": "The perfect gift of time, relaxation, and a moment of care for you, your changing body and your growing baby. Available after your first 12 weeks.",
             "prices": [
                 {
@@ -103,8 +108,9 @@
         {
             "name": "Deep Reset",
             "type": "program",
-            "image": "images/massage_test.jpg",
-            "description": "A 6 week Massage Program providing your body with a consistent, deep calm designed to strengthen your inbuilt systems that deal with stress and comfort. Each session builds on the last, using a variation of restorative, deep tissue and innervating techniques at the same time each week to give your body the space to trust, relax and heal - allowing it to soften, settle and reset. Over the six weeks, you may notice improved sleep, reduced tension, greater emotional balance, and an increased sense of calm and resilience. This is not about fixing or forcing change — it’s about creating space for your nervous system to gently return to balance. Please message before booking on 07429516993.",
+            "image": "images/service-1.webp",
+            "short_description": "A six-week journey to calm the body and reset the nervous system.",
+            "description": "A 6 week Massage Program providing your body with a consistent, deep calm designed to strengthen your inbuilt systems that deal with stress and comfort. Each session builds on the last, using a variation of restorative, deep tissue and innervating techniques at the same time each week to give your body the space to trust, relax and heal - allowing it to softening, settle and reset. Over the six weeks, you may notice improved sleep, reduced tension, greater emotional balance, and an increased sense of calm and resilience. This is not about fixing or forcing change — it’s about creating space for your nervous system to gently return to balance. Please message before booking on 07429516993.",
             "prices": [
                 {
                     "duration": "6 x 60 min",
@@ -119,7 +125,8 @@
         {
             "name": "expecting",
             "type": "program",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-5.webp",
+            "short_description": "Tailored massage support through pregnancy and postnatal recovery.",
             "description": "Get in touch to discuss different options to suit your needs a series of massages through the different stages of your pre and post natal journey designed to enhance and attune your experience.",
             "prices": [
                 {
@@ -131,7 +138,8 @@
         {
             "name": "Marathon",
             "type": "program",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-3.webp ",
+            "short_description": "Recovery-focused sessions to support training, performance and rest.",
             "description": "here, we work on the muscles and the mind through a variety of sessions over your training plan. giving you that time and space to slow down, think about your achievements and give your body that much deserved love. message before booking.",
             "prices": [
                 {
@@ -143,7 +151,8 @@
         {
             "name": "creative",
             "type": "program",
-            "image": "images/massage_test.jpg",
+            "image": "images/service-4.webp",
+            "short_description": "Massage sessions designed to inspire creativity and inner connection.",
             "description": "Let your body anchor while your mind wanders. A series of sessions curated to open doors and cultivate connection between your outer and inner worlds. Using flowing techniques and just the right pressure to have you feeling ready to write, paint, dance and create. Message before booking.",
             "prices": [
                 {
