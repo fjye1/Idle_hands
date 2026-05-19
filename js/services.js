@@ -1,10 +1,20 @@
+
+
 fetch("services.json")
   .then((res) => res.json())
   .then((data) => {
-    const services = data.services;
-    const container = document.getElementById("services-container");
+    const containers = {
+      solo: document.getElementById("services-container-solo"),
+      program: document.getElementById("services-container-program"),
+    };
 
-    services.forEach((service) => {
+    data.services.forEach((service) => {
+      const type = service.type.toLowerCase();
+      const container = containers[type];
+
+      // Skip if there's no matching container for this type
+      if (!container) return;
+
       const col = document.createElement("div");
       col.className = "service-item";
 
@@ -18,7 +28,8 @@ fetch("services.json")
     <div class="service-content">
 
       <div class="top-row">
-        <h5>${service.name}</h5>
+        <h3>${service.name}</h3>
+        <h5>${service.type}</h5>
       </div>
 
       <p>${service.description}</p>
@@ -33,7 +44,7 @@ fetch("services.json")
                   <span>${item.duration}</span>
                   <span>${item.price}</span>
                 </div>
-              `
+              `,
             )
             .join("")}
         </div>
@@ -52,3 +63,5 @@ fetch("services.json")
       container.appendChild(col);
     });
   });
+
+ 
