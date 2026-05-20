@@ -193,15 +193,15 @@ h1, h2, h3, h4, h5, h6, p {
   white-space: nowrap;
   margin: 0;
   color: #fff9eb;
-  font-size: clamp(3rem, 20vw, 20.8rem);
-  font-weight: 800;
+  font-size: clamp(2.5rem, 16vw, 17rem);
+  font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
 }
 
 .location {
   color: #fff9eb;
-  font-size: clamp(0.7rem, 3.9vw, 2.6rem);
+  font-size: clamp(0.6rem, 3.2vw, 2.1rem);
   font-weight: 100;
   letter-spacing: 0.02em;
   transform: translate(0.4em, -0.4em);
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .tagline {
   color: #fff9eb;
-  font-size: clamp(0.7rem, 3.9vw, 2.6rem);
+  font-size: clamp(0.6rem, 3.2vw, 2.1rem);
   font-weight: 400;
   letter-spacing: 0.05em;
   transform: translateY(-0.8em);
