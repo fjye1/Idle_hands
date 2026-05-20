@@ -1,5 +1,3 @@
-
-
 fetch("services.json")
   .then((res) => res.json())
   .then((data) => {
@@ -20,9 +18,7 @@ fetch("services.json")
       col.innerHTML = `
   <div class="service-card">
 
-    <div class="service-image">
-      <img src="${service.image}" alt="${service.name}" />
-    </div>
+    
 
     <div class="service-content">
 
@@ -31,30 +27,13 @@ fetch("services.json")
         <h5>${service.type}</h5>
       </div>
 
-      <p>${service.short_description}</p>
+      <p>${service.description}</p>
 
-      <button class="read-more-btn">
-        Read More
-      </button>
-
-      <div class="long-description hidden">
-        <p>${service.description}</p>
-      </div>
+      
 
       <div class="bottom-row">
 
-        <div class="price-list">
-          ${service.prices
-            .map(
-              (item) => `
-                <div class="price-row">
-                  <span>${item.duration}</span>
-                  <span>${item.price}</span>
-                </div>
-              `,
-            )
-            .join("")}
-        </div>
+        
 
         <a href="book.html" class="btn">Book</a>
 
@@ -68,13 +47,5 @@ fetch("services.json")
 `;
 
       container.appendChild(col);
-
-      // ✅ Inside the forEach — runs once per card, col is in scope
-      const button = col.querySelector(".read-more-btn");
-      const longDescription = col.querySelector(".long-description");
-
-      button.addEventListener("click", () => {
-        longDescription.classList.toggle("hidden");
-      });
     });
   });
