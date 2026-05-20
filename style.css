@@ -574,8 +574,8 @@ p {
   width: 100%;
   text-align: left;
   padding: 15px;
-  cursor: pointer;
-  background-color: #ebf1ff; /* Same colour as the footer */
+  cursor: pointer; 
+  background-color: #ebf1ff; /* Same colour as the footer */ 
   border-radius: 8px;
 }
 
