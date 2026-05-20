@@ -31,7 +31,13 @@ body {
   font-family: "Eina_01", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: "Eina_01", sans-serif;
 }
 
@@ -233,7 +239,6 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.3s ease;
 }
 
-
 /* .btn-standard {
   display: block;
   width: fit-content;
@@ -305,18 +310,33 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.middle-8       { grid-column: 5 / 9;  text-align: center; }
-.full-width     { grid-column: 1 / -1; }
-.middle-left-8  { grid-column: 2 / 6; }
-.middle-right-8 { grid-column: 6 / 10; }
-.left-8         { grid-column: 3 / 7; }
-.right-8        { grid-column: 7 / 11; }
+.middle-8 {
+  grid-column: 5 / 9;
+  text-align: center;
+}
+.full-width {
+  grid-column: 1 / -1;
+}
+.middle-left-8 {
+  grid-column: 2 / 6;
+}
+.middle-right-8 {
+  grid-column: 6 / 10;
+}
+.left-8 {
+  grid-column: 3 / 7;
+}
+.right-8 {
+  grid-column: 7 / 11;
+}
 
 /* ─── Fade animation index.html ─────────────────────────────────────── */
 
 .fade-text {
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .fade-text.visible {
@@ -393,9 +413,15 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* even: flip all three */
-.service-item:nth-child(even) .service-image   { order: 2; }
-.service-item:nth-child(even) .service-content { order: 1; }
-.service-item:nth-child(even) .service-spacer  { order: 0; }
+.service-item:nth-child(even) .service-image {
+  order: 2;
+}
+.service-item:nth-child(even) .service-content {
+  order: 1;
+}
+.service-item:nth-child(even) .service-spacer {
+  order: 0;
+}
 
 .top-row,
 .bottom-row {
@@ -419,9 +445,17 @@ h1, h2, h3, h4, h5, h6, p {
     flex: unset;
   }
 
-  .service-image  { flex: 1; order: 0 !important; }
-  .service-content { flex: 2; order: 1 !important; }
-  .service-spacer  { display: none; }
+  .service-image {
+    flex: 1;
+    order: 0 !important;
+  }
+  .service-content {
+    flex: 2;
+    order: 1 !important;
+  }
+  .service-spacer {
+    display: none;
+  }
 }
 
 /* ─── Review cards index.html ───────────────────────────────────────── */
@@ -501,8 +535,12 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 
-.footer-left  { justify-content: flex-start; }
-.footer-right { justify-content: flex-end; }
+.footer-left {
+  justify-content: flex-start;
+}
+.footer-right {
+  justify-content: flex-end;
+}
 
 .footer-icons {
   display: flex;
@@ -537,7 +575,22 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: left;
   padding: 15px;
   cursor: pointer;
+  background-color: #ebf1ff; /* Same colour as the footer */
+  border-radius: 8px;
 }
+
+/* This removes the boxes and just has bold text */
+/* .faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  cursor: pointer;
+
+  font-weight: bold;
+  background: none;
+  border: none;
+  outline: none;
+} */
 
 .faq-answer {
   max-height: 0;
