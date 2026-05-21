@@ -570,17 +570,19 @@ p {
   margin-bottom: 15px;
 }
 
-.faq-question {
+/* Same colour as the footer */ 
+/* .faq-question {
   width: 100%;
   text-align: left;
   padding: 15px;
   cursor: pointer; 
-  background-color: #ebf1ff; /* Same colour as the footer */ 
+  background-color: #ebf1ff; 
   border-radius: 8px;
-}
+} */
+
 
 /* This removes the boxes and just has bold text */
-/* .faq-question {
+.faq-question {
   width: 100%;
   text-align: left;
   padding: 10px 0;
@@ -590,7 +592,14 @@ p {
   background: none;
   border: none;
   outline: none;
-} */
+}
+
+/* dash between questions */
+.faq-item:not(:last-child) {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 
 .faq-answer {
   max-height: 0;
