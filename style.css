@@ -566,9 +566,7 @@ p {
 
 /* ─── faq faq.html ───────────────────────────────────────── */
 
-.faq-item {
-  margin-bottom: 15px;
-}
+
 
 /* Same colour as the footer */ 
 /* .faq-question {
@@ -580,6 +578,9 @@ p {
   border-radius: 8px;
 } */
 
+.faq-item {
+  margin-bottom: 15px;
+}
 
 /* This removes the boxes and just has bold text */
 .faq-question {
@@ -608,6 +609,6 @@ p {
 }
 
 .faq-answer.active {
-  max-height: 200px;
+  max-height: 1000px;
   padding: 15px;
 }
