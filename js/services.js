@@ -24,7 +24,7 @@ fetch("services.json")
 
       <div class="top-row">
         <h3>${service.name}</h3>
-        <h5>${service.type}</h5>
+        
       </div>
 
       <p>${service.description}</p>

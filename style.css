@@ -589,6 +589,9 @@ p {
   padding: 10px 0;
   cursor: pointer;
 
+  font-size: 1.25rem;
+  margin: 0;
+
   font-weight: bold;
   background: none;
   border: none;

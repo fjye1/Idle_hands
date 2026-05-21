@@ -21,7 +21,7 @@ fetch("faq.json")
           </button>
 
           <div class="faq-answer">
-            <p>${item.answer}</p>
+            <p><strong>${item.answer}</strong></p>
           </div>
         `;
 
