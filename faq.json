@@ -1,0 +1,71 @@
+{
+  "faq": [
+    {
+      "category": "Treatment Sessions",
+      "questions": [
+        {
+          "question": "What happens in a treatment session?",
+          "answer": "The session begins with a consultation. This is your opportunity to speak up on any information about your body, your emotional landscape or your day to day. It often feels like a chat - sometimes about a calf strain, sometimes about a conversation you had at work. All this just gives the therapist information on how to treat you, and what might be nutritious for you on that day. After the consultation the therapist will leave the room to give you space to derobe and lie on the massage table. Then they’ll come back in, get you ready and start the treatment. After the treatment, they will leave for a few minutes for you to get back into the world and your outfit. The last few minutes are to drink a glass of water, talk about anything that came up, how you feel after the treatment, complete payment and discuss rebooking plans."
+        },
+        {
+          "question": "I don’t get massage often and I’m unsure of what treatment I should book, how will I know?",
+          "answer": "The key is in the consultation! Don’t worry too much about this while you’re booking, but do communicate what you’re feeling. We’ll work out what seems best in the consultation and, especially on your first visit, we’ll aim for a good level of communication on the table about feels right. A massage is a relational thing, and we can modify as we go to give you the experience your body is yearning for."
+        },
+        {
+          "question": "What should i wear?",
+          "answer": "It doesn’t matter to me what you were to your appointment - the key is that you feel good! If you have the time and space, try and think about how you’ll feel comfortable in as you’re leaving. Many of my clients come straight on their way to or from work too."
+        },
+        {
+          "question": "Can a massage help even if I’m not in pain?",
+          "answer": "Absolutely! In a perfect world, you would come before the pain, and we would work together to keep you well rather than only coming when something hurts. In Chinese Medicine, you would go regularly to the doctor to keep a state of wellness, and nip things in the bud before they appear. Regular massage not only limbers up the physical parts of you, but builds resilience in your nervous system, helping to keep your emotional shoulders unburdened for longer too."
+        },
+        {
+          "question": "I am in my brain a lot, and it makes massage hard for me to sit through. What can i do?",
+          "answer": "Remember the massage is for you. If at any point you don’t want to be on the table anymore, we can take a break or stop. If you’d like to chat, we can chat. If you’d like to sit on the seat and read your book. Together we can work through many tools to make the treatment work for you and meet your comfort needs. One thing I like to do while I’m getting a massage is to thank my body for the work it’s been doing to keep me alive. I try and focus on my breathing and if the treatment is on my leg i say ‘thank you leg’ and let them know i am grateful. And remember, everyone is different and massage isn’t for everyone too. You don’t have to sit through anything you don't want to."
+        },
+        {
+          "question": "What’s the point?",
+          "answer": "Great question! Let’s think of ourselves as three systems - the physical, emotional and spiritual. Within your treatment we will begin to access and converse with all three to meet your needs. Regular massage improves muscle tone, helps us regulate our heart rate variability and human touch gives us an overall feeling of well being. One off treatments do these things on a ‘here and now’ scale, while regular treatments keep you topped up. It takes time for us to embody experiences, so I do always recommend booking a few sessions. Some days we could have the exact same massage and feel a totally different outcome and that’s all part of the practice! Sometimes I refer to it as an aided body scan, our job is to learn the language of our three systems and try to do what’s best for them. We give you a moment to not look at your phone or to do list, our aim is to provide space and time for you to feel relief inside your body."
+        },
+        {
+          "question": "How often do you recommend I come?",
+          "answer": "Good question! This changes from person to person, from state to state and really, you know yourself best. Massage is a great tool to learn and practice feeling what your body wants, and a regular massage practice really wakes up the systems which are to play in this. Ask yourself, do I feel intune with my body? would i like to feel more of that? how do i feel before a treatment, and how do i feel after? could my body/mind use a little extra support right now? make your own questions too! let me know what they are. I have clients that range from once a week to once a quarter. It’s nice to come a bit more regularly to begin with (once a week or every two) to build up a base and a rapport with your massage therapist, and then loosen to the timeframe you find best. As a general template, I recommend 3 sessions of once every two weeks, then spreading out to once a month. I recommend the first session to be 90 minutes. It’s nice to give your body self care and consistency."
+        },
+        {
+          "question": "How long will it take to feel an improvement?",
+          "answer": "This changes for everyone and every case. While one treatment may ease your ailment for a while and make you feel better, generally speaking the changes won’t last long without keeping up appointments for at least 4 - 6 treatments. Remember, massage is a complementary therapy and should never be used instead of going to the doctor."
+        }
+      ]
+    },
+    {
+      "category": "Accessibility & Studio",
+      "questions": [
+        {
+          "question": "What if I would prefer not to take my clothes off?",
+          "answer": "At idle hands, we want massage to be accessible to everyone and cater to all types of needs. Please do let us know if you are feeling any reservations and we are here to make things as comfortable as possible. We’d so much rather to know how you’re feeling, and it’s very common to take a bit of time to get things right."
+        },
+        {
+          "question": "Is the treatment room accessible?",
+          "answer": "Our studio is not wheelchair accessible, but please do get in contact with any questions or needs and we’ll strive to make you comfortable. We do regular home visits for this reason and can also enquire about other spaces. unfortunately we can’t have dogs in the treatment room or waiting area."
+        },
+        {
+          "question": "Can I park at the studio?",
+          "answer": "There is on street parking just outside the studio, that you will need to pay for. If you have a bike, you will need to lock it on the main road, there is no storage in the studio or places to lock on the street, so please work that into your travel time."
+        }
+      ]
+    },
+    {
+      "category": "Health & Policies",
+      "questions": [
+        {
+          "question": "Are there any circumstances in which i shouldn’t get a massage?",
+          "answer": "Yes, there are a few things to be aware of - and if there is anything you’re unsure about, please let me know beforehand or talk to your doctor. I cannot treat anyone in the first trimester of pregnancy, or if you having chemotherapy or radiotherapy. I cannot treat you if you are under the influence of alcohol or substances. If you have a cold or a flu, please call as soon as possible to rebook. Please use your own discernment, and if you let us know sooner rather than later, we may have the ability to rebook without a fee."
+        },
+        {
+          "question": "Can I buy a package of treatments?",
+          "answer": "Yes! Please do - while its good for you to provide reliability, consistency and trust for your own body, i’m also a small business who relies on your custom to survive. So packages and booking in advance help me as well as you."
+        }
+      ]
+    }
+  ]
+}

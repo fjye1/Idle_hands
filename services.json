@@ -1,0 +1,49 @@
+{
+    "services": [
+        {
+            "name": "deep",
+            "type": "solo",
+            "description": "deliberate, focused deep tissue work. Sinking layer by layer to target long-held tension, working with the body rather than against it. If you’ve come with a new or long-term issue, we’ll work directly on it to help your body release and restore ease. The aim is to unburden, and to aid a profound sense of calm that lingers long after leaving the massage table."
+        },
+        {
+            "name": "restorative",
+            "type": "solo",
+            "description": "slow, intuitive touch. Guided by breath and stillness, it invites the body to exist beyond muscle and bone and creates a space for calm, clarity and a profound state of rest."
+        },
+        {
+            "name": "lomi lomi style",
+            "type": "solo",
+            "description": "lomi lomi flows over the body like water, easing tension and softening held patterns. It is a heart-led massage that is personalised to each client in the present moment. Allow yourself to open up and release, leaving embodied, grounded and energised."
+        },
+        {
+            "name": "face",
+            "type": "solo",
+            "description": "if you haven't tried this before, you are in for a treat. With focus around the face, scalp and neck this treatment is perfect for dissolving tension you didn't know you had. Using slow, strong techniques along the back, jawline and forehead, the feeling of sinking into the massage table will stay with you for days to come. This is the perfect gift for a loved one. "
+        },
+        {
+            "name": "pregnancy + post natal",
+            "type": "solo",
+            "description": "the gift of time, relaxation, and a moment of care for you, your changing body and your growing baby. Available after 12 weeks of your pregnancy and long into your 4th trimester. "
+        },
+        {
+            "name": "deep reset",
+            "type": "program",
+            "description": "over 6 weeks this programme will provide your body with a consistent, deep calm designed to strengthen your inbuilt systems that deal with stress and comfort. each session builds on the last, using a variation of restorative, deep tissue and innervating techniques at the same time each week to give your body the space to trust, allowing it to softening, settle and reset. This is not about fixing or forcing change — it’s about creating space for your nervous system to gently return to balance.Please message before booking on 07429516993"
+        },
+        {
+            "name": "expecting",
+            "type": "program",
+            "description": "the perfect gift of time, relaxation, and a moment of care for you, your changing body and your growing baby. Tailored massage support throughout your pregnancy and into the postnatal period designed to provide relief, enhance and attune your experience. Every pregnancy is different, we ask you to get in touch to discuss options before booking on 07429516993. Note: treatments will begin after 12 week of pregnancy."
+        },
+        {
+            "name": "runner ",
+            "type": "program",
+            "description": "here we work on the muscles and the mind through a series of sessions over your training period. Giving you that time and space to slow down, think about your achievements and give your body that much deserved love. Please message before booking on 07429516993"
+        },
+        {
+            "name": "creative",
+            "type": "program",
+            "description": "let your body anchor while your mind wanders. A series of sessions curated to open doors and cultivate connection between your outer and inner worlds. Using flowing techniques and just the right pressure to have you feeling ready to write, paint, dance and create. Please message before booking on 07429516993"
+        }
+    ]
+}

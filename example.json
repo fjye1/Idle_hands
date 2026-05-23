@@ -1,0 +1,26 @@
+{
+    "services": [
+        {
+            "name": "Pregnancy",
+            "type": "solo",
+            "image": "images/service-5.webp",
+            "short_description": "Gentle, supportive care for you and your changing body.",
+            "description": "The perfect gift of time, relaxation, and a moment of care for you, your changing body and your growing baby. Available after your first 12 weeks.",
+            "prices": [
+                {
+                    "duration": "30 min",
+                    "price": "£90"
+                },
+                {
+                    "duration": "60 min",
+                    "price": "£120"
+                },
+                {
+                    "duration": "90 min",
+                    "price": "£160"
+                }
+            ]
+        }
+        
+    ]
+}
