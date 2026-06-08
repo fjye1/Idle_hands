@@ -20,13 +20,13 @@
       content="https://idlehandsmassagetherapy.co.uk/images/idle_hands_1200x630px(2).png"
     />
     <title>idle hands massage therapy</title>
-    <link rel="icon" href="favicon.png" sizes="48x48" type="image/png" />
+    <link rel="icon" href="/favicon.png" sizes="48x48" type="image/png" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <script
     async
@@ -46,7 +46,7 @@
       <div class="hero-container shrink">
         <!-- shrink applied from the start -->
         <img
-          src="images/Back-Img-Hero.webp"
+          src="/images/Back-Img-Hero.webp"
           alt="Relaxing massage treatment"
           class="hero-img rounded"
         />
@@ -54,37 +54,47 @@
       </div>
 
       <nav class="navbar">
-        <a href="index.html" class="brand" style="text-decoration: none"
+        <a href="/index.html" class="brand" style="text-decoration: none"
           >idle hands</a
         >
         <div class="nav-links"></div>
 
         <div class="dropdown">
-          <a href="services.html" class="bar-link dropdown-toggle"
+          <a href="/services/" class="bar-link dropdown-toggle"
             >treatments</a
           >
 
           <div class="dropdown-menu">
-            <a href="solo-services.html">treatments</a>
-            <a href="program-services.html">bundle</a>
+            <a href="/services/solo-services/">treatments</a>
+            <a href="/services/program-services/">bundle</a>
           </div>
         </div>
-        <a href="about.html" class="bar-link">about</a>
-        <a href="faq.html" class="bar-link">faq</a>
-        <a href="book.html" class="bar-link">book</a>
+        <a href="/about/" class="bar-link">about</a>
+        <a href="/faq/" class="bar-link">faq</a>
+        <a href="/book/" class="bar-link">book</a>
       </nav>
     </div>
-
     <div id="header"></div>
     <div class="spacer-small"></div>
+    <!-- TODO clean this up if its not needed -->
+    <!-- <div class="text-center my-5">
+      <h2 class="fw-bold">Massage Therapy Services</h2>
+      <p class="text-muted mb-0">
+        Choose a treatment designed to restore balance, release tension, and
+        reset the body.
+      </p>
+    </div> -->
     <div class="container my-5">
       <h1 style="text-align: center">treatments</h1>
       <hr />
       <div id="services-container-solo"></div>
+      <h1 style="text-align: center">bundle treatments</h1>
+      <hr />
+      <div id="services-container-program"></div>
     </div>
 
     <div id="footer"></div>
-    <script src="js/services.js"></script>
-    <script src="js/base.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/base.js"></script>
   </body>
 </html>

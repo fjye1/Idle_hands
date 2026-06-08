@@ -1,4 +1,4 @@
-fetch("services.json")
+fetch("/services.json")
   .then((res) => res.json())
   .then((data) => {
     const containers = {

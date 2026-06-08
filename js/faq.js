@@ -1,4 +1,4 @@
-fetch("faq.json")
+fetch("/faq.json")
   .then((res) => res.json())
   .then((data) => {
     const container = document.getElementById("faq-container");

@@ -20,7 +20,7 @@ function loadHTML(containerId, url, callback) {
 }
 
 // Load header and footer
-loadHTML("header", "partials/headers.html", () => {
+loadHTML("header", "/partials/headers.html", () => {
   setActiveNav();
 
   // // Initialize phone toggle after header is loaded
@@ -44,7 +44,7 @@ loadHTML("header", "partials/headers.html", () => {
 
 
 
-loadHTML("footer", "partials/footers.html", () => {
+loadHTML("footer", "/partials/footers.html", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
 });
 
