@@ -24,6 +24,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Eina_01";
+  src: url("./fonts/Eina01-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ─── Base all ───────────────────────────────────────────────── */
 
 body {
@@ -200,7 +208,6 @@ p {
   margin: 0;
   color: #fff9eb;
   font-size: clamp(2.5rem, 16vw, 17rem);
-  font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
 }
