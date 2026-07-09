@@ -35,7 +35,7 @@ fetch("/services.json")
 
         
 
-        <a id="book-link" href="#" class="btn book-link">book here</a>
+        <a id="book-link" href=${service.url} class="btn book-link">book here</a>
 
       </div>
 
