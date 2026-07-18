@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    
+    <!-- 1. Meta Refresh: Tells the browser to redirect after 0 seconds -->
+    <meta http-equiv="refresh" content="0;url=https://idlehandsmassagetherapy.co.uk/?utm_source=qr&utm_medium=print&utm_campaign=shop_qr">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>If you are not redirected automatically, follow this <a id="redirect-link" href="https://idlehandsmassagetherapy.co.uk/?utm_source=qr&utm_medium=print&utm_campaign=shop_qr">link to the new page</a>.</p>
+    </div>
+
+    <!-- 2. JavaScript Fallback: Runs instantly if Meta Refresh is ignored -->
+    <script>
+        const destination = "https://idlehandsmassagetherapy.co.uk/?utm_source=qr&utm_medium=print&utm_campaign=shop_qr";
+        
+        // Update the link href just in case it needs to be dynamic, though static is fine
+        document.getElementById('redirect-link').href = destination;
+        
+        // Trigger the redirect immediately
+        window.location.replace(destination);
+    </script>
+</body>
+</html>
