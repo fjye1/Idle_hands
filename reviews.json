@@ -47,27 +47,6 @@
       "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT201c1VXa3lTbDlTZUROVVJHcFNNMUV0YzJVMFQyYxAB!2m1!1s0x48761ded5f54676d:0xdfd8d514c289465d"
     },
     {
-      "name": "places/ChIJbWdUX-0ddkgRXUaJwhTV2N8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKVVpHUkdOalJ5YTJkbU5raGxVWGt0UmtoWFYwRRAB",
-      "relativePublishTimeDescription": "5 months ago",
-      "rating": 5,
-      "text": {
-        "text": "Lynn is absolutely amazing. She’s so intuitive and communicative in the best ways. I’ve been getting massages for the past couple of decades, but have never had a masseuse fine tune along the way as Lynn does. Perfect balance of relaxation and deep tissue reset. Thank you!",
-        "languageCode": "en"
-      },
-      "originalText": {
-        "text": "Lynn is absolutely amazing. She’s so intuitive and communicative in the best ways. I’ve been getting massages for the past couple of decades, but have never had a masseuse fine tune along the way as Lynn does. Perfect balance of relaxation and deep tissue reset. Thank you!",
-        "languageCode": "en"
-      },
-      "authorAttribution": {
-        "displayName": "No L",
-        "uri": "https://www.google.com/maps/contrib/109089141811770109778/reviews",
-        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIThb_IHHyQGtdMcfDhOxHLy2EW4KmKn64es4v-ZXDmN7Dnkg=s128-c0x00000000-cc-rp-mo-ba2"
-      },
-      "publishTime": "2026-03-28T14:25:55.555990196Z",
-      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pKVVpHUkdOalJ5YTJkbU5raGxVWGt0UmtoWFYwRRAB&d=17924085&t=1",
-      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pKVVpHUkdOalJ5YTJkbU5raGxVWGt0UmtoWFYwRRAB!2m1!1s0x48761ded5f54676d:0xdfd8d514c289465d"
-    },
-    {
       "name": "places/ChIJbWdUX-0ddkgRXUaJwhTV2N8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2kweVVYRkNWR0Z0UzA1VU1YSk1WWGhvYlc1clRGRRAB",
       "relativePublishTimeDescription": "6 months ago",
       "rating": 5,
@@ -108,6 +87,27 @@
       "publishTime": "2026-07-10T13:39:24.247590240Z",
       "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2kwMU5qUXROak5UU1VoSk1YVkxRbUZhVFVodGFWRRAB&d=17924085&t=1",
       "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2kwMU5qUXROak5UU1VoSk1YVkxRbUZhVFVodGFWRRAB!2m1!1s0x48761ded5f54676d:0xdfd8d514c289465d"
+    },
+    {
+      "name": "places/ChIJbWdUX-0ddkgRXUaJwhTV2N8/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KeFgwUm5abXR0WW5relptZ3dUREphTmtwaGNIYxAB",
+      "relativePublishTimeDescription": "5 months ago",
+      "rating": 5,
+      "text": {
+        "text": "I’ve had several massages from Lynn now and each one has been absolutely wonderful! She is very considerate and targets the areas you need work on. Already looking forward to my next massage, thank you Lynn!",
+        "languageCode": "en"
+      },
+      "originalText": {
+        "text": "I’ve had several massages from Lynn now and each one has been absolutely wonderful! She is very considerate and targets the areas you need work on. Already looking forward to my next massage, thank you Lynn!",
+        "languageCode": "en"
+      },
+      "authorAttribution": {
+        "displayName": "Amanda Bissett",
+        "uri": "https://www.google.com/maps/contrib/118221429226411432758/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK82h4vAJ_LAEV5nXfB26rV7IFOYrOD7zEcbfCPSZJ3ff5Uew=s128-c0x00000000-cc-rp-mo"
+      },
+      "publishTime": "2026-03-27T14:03:42.471027707Z",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21KeFgwUm5abXR0WW5relptZ3dUREphTmtwaGNIYxAB&d=17924085&t=1",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KeFgwUm5abXR0WW5relptZ3dUREphTmtwaGNIYxAB!2m1!1s0x48761ded5f54676d:0xdfd8d514c289465d"
     }
   ]
 }
