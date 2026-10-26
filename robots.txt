@@ -1,0 +1,5 @@
+# TODO(SEO): new file - lets search engines find the sitemap and skips the QR redirect page
+User-agent: *
+Disallow: /redirect/
+
+Sitemap: https://idlehandsmassagetherapy.co.uk/sitemap.xml

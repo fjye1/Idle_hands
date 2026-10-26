@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO(SEO): added lastmod dates - update the date on a page whenever you change it -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/about/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/services/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/services/solo-services/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/services/program-services/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/book/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
   <url>
     <loc>https://idlehandsmassagetherapy.co.uk/faq/</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
 
 </urlset>
